@@ -1,0 +1,397 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@font-face 
+{
+    font-family: 'FonteLogo';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+
+body
+    {         
+        color: black;
+        background-color: #dddddd;
+        font-family: Arial, sans-serif;
+        
+        
+    }
+
+
+
+div#interface
+{
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 30px;
+    position: relative;
+}
+
+p
+{
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header#cabecalho img#icone 
+{
+    position: absolute; /*ABSOLUTO EM RELAÇÃO AO ULTIMO RELATIVE NA HIERAQUIA (INTERFACE)*/
+    top: 100px;
+    left: 780px ;
+    
+    
+}
+
+/* FORMATAÇÃO DO MENU*/
+
+nav#menu 
+{
+    display:block ;
+}
+
+nav#menu ul
+{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;   /*ABSOLUTO EM RELAÇÃO AO ULTIMO RELATIVE NA HIERAQUIA (INTERFACE)*/
+    top: -5px;
+    left: 320px;
+       
+
+}
+
+nav#menu li
+{
+    display: inline-block;
+    margin: -2.2px;
+    margin-top: 10.5px;
+    
+       
+}
+
+
+nav#menu a
+{
+    color: black;
+    text-decoration: none;
+    background-color: #dddd;
+    padding: 10px; /* Aumenta a area do background, criando um espaçamento maior do back ground em relação ao texto. PADDING = MARGEM INTERNA*/
+    margin: 0px; /* Cria uma margem entre os boxes de back ground em relação ao do lado. MARGIN = MARGEM EXTERNA*/
+    transition: background-color 1s;
+    
+}
+
+nav#menu a:hover
+{
+    background-color: #606060;
+    color: white;
+    
+}
+
+
+
+nav#menu a#home{
+    background-color: #606060;
+    
+}
+
+nav#menu a#home {
+    
+    color: white;
+}
+
+nav#menu a#spec{
+    background-color: #606060;
+    
+}
+nav#menu a#spec {
+    
+    color: white;
+}
+
+nav#menu a#foto{
+    background-color: #606060;
+    
+}
+nav#menu a#foto  {
+    
+    color: white;
+}
+
+nav#menu a#mult{
+    background-color: #606060;
+    
+}
+nav#menu a#mult  {
+    
+    color: white;
+}
+
+nav#menu a#fale{
+    background-color: #606060;
+    
+}
+nav#menu a#fale  {
+    
+    color: white;
+}
+
+
+nav#menu h1 
+{
+   display: none;
+}
+
+
+header#cabecalho 
+{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px;      
+}
+
+header#cabecalho h1
+{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2
+{
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+/* FORMATAÇÃO DE IMAGENS COM LEGENDA */
+
+figure.foto-legenda
+{
+    border: 8px solid white; /* Cria uma borda entre a imagem e seu limite de margem (box)*/
+    box-shadow: 1px 1px 4px black; /* Cria uma sombra ao redor do box da imagem*/
+    position:relative; /* Modifica a relação entre a posição da imagem e sua exibição na tela , segue as orientações relativas ao container*/
+}
+figure.foto-legenda img
+{
+    width: 100%; /* Modifica a lagura da imagem */
+    height: 100%; /* Modifica a altura da imagem */
+}
+figure.foto-legenda figcaption{
+    opacity: 0; /* Define a transparencia da legenda. 0 = menor nivel */
+    position: absolute; /* Referencia a posicao da legenda em relacao a imagem */
+    top:0px; /* altera a posiciao inicial da altura da legenda */
+    background-color: rgba(0,0,0,0.4); /* define a cor de fundo da legenda*/
+    color: white; /* define a cor da fonte da legenda*/
+    width: 100%; /* define a largura da legenda */
+    height: 99.5%; /* altura da legenda */
+    padding: 10px; /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas */
+    box-sizing:border-box; /* Altera e define as propriedades de alinhamento altura e largura da legenda em relação à imagem*/
+    transition: opacity 1s; /* */
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/* ALTERAÇÕES NA TABELA*/
+
+table#tabelaspec /* Alterações da tabela geral. */
+{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+table#tabelaspec td /* Alterações individuiais propagadas para cada celula (TD) */
+{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: right;   
+}
+
+table#tabelaspec td.ce /* Alteracoes individuais propagadas para cada celula pertencente à classe ce */
+{
+
+    background-color: #606060;
+    color: white;
+    vertical-align: top;
+    font-weight: bold;
+
+}
+
+table#tabelaspec td.cd /* Alteracoes individuais propagadas para cada celula pertencente à classe cd */
+{
+    text-align: left;
+    background-color: #cecece;
+}
+
+table#tabelaspec caption /* Alteracoes no titulo da tabela definido pela ta <caption/> */
+{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold ;
+      
+}
+
+table#tabelaspec caption span
+{
+    font-size: 8pt;
+    display: block; /* TRANSFORMA O TEXTO EM BLOCO, PODENDO MOVE-LO PELA TELA DO DOCUMENTO*/
+    float: right;
+    color: black;
+    margin-top: 10px;
+    
+}
+
+
+
+
+section#corpo
+{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+section#corpo video#video01{
+    display: block;
+    position: relative;
+    width: auto;
+    height: 280px;
+    padding: 0px;
+    margin: 0px;
+    top: -10px;
+}
+
+
+
+article#noticia-principal h2
+{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1
+{
+    font-family: 'FonteLogo',sans-serif;
+    font-size: 13pt;
+    color: #606060;
+}
+
+header#cabecalho-artigo h3
+{
+    font-size: 10pt;
+    color: #606060;
+
+}
+
+
+.direita
+{
+    text-align: right;
+}
+
+
+aside#lateral
+{
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+aside#lateral video#video02{
+    display: block;
+    position: relative;
+    width: auto;
+    height: 195.5px;
+    padding: 0px;
+    margin: 0px;
+    top: 5x;
+    
+}
+
+aside#lateral h1
+{
+    font-family: 'FonteLogo',sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0;
+    
+}
+
+aside#lateral h2
+{
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;
+}
+
+footer#rodape
+{
+    clear: both;
+    border-top: 1px solid #606060;
+    
+    
+}
+
+footer#rodape p
+{
+    position: relative;
+    right: 10px;
+    text-align:center;
+    color: rgb(95, 95, 95);
+    font-size: 14px;     
+ 
+}
+
+footer#rodape p#linkinsta{
+      
+    position: relative;
+    bottom: 8px;
+    margin-bottom: 0px;
+}
+
+footer#rodape a
+{
+  
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    
+}
+
+footer#rodape a:hover
+{
+    color: rgb( 138, 58, 185);
+   text-decoration: underline;
+}
+
+a
+{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
