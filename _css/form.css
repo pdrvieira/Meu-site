@@ -52,3 +52,16 @@ fieldset#mensagem{
 fieldset#pedido{
     background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
 }
+
+select#cEST{
+    display: block;
+    position: relative;
+    left: 116px;
+    top: -38px;
+}
+
+p#textocidade{
+    display: block;
+    position: relative;
+    top: -36px;
+}
