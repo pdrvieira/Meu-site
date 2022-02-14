@@ -1,3 +1,3 @@
 # meu-site
 
-Feito inteiramente por mim, por meio de aulas online assistidas.
+Site experimental construido com uso de HTML, CSS e JS
